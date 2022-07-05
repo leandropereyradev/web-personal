@@ -1,0 +1,552 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Gothic;
+    src: url("../src/fonts/GOTHIC.TTF");
+}
+
+body {
+    font-family: Gothic;
+    background-image: url('../src/assets/img/base/bgcolors.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Menu FullPage.js */
+
+#fp-nav.fp-right {
+    right: 0;
+}
+
+#fp-nav ul li a span {
+    background-color: aliceblue;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: aliceblue;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+}
+
+.contenedor-logo {
+    position: absolute;
+    bottom: 45%;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.contenedor-logo img {
+    width: 100%;
+
+}
+
+.contenedor-titulos {
+    position: absolute;
+    bottom: 4rem;
+    margin-left: 2rem;
+    color: aliceblue;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.contenedor-lineas {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-lineas {
+    margin: 0.5rem 0;
+}
+
+.linea-uno,
+.linea-dos {
+    background-color: aliceblue;
+    height: 2px;
+    width: 5rem;
+    margin: 0.4rem 0;
+}
+
+.linea-dos {
+    margin-left: 2rem;
+}
+
+.contenedor-subtitulo {
+    letter-spacing: 3px;
+}
+
+/* Portfolio */
+
+.imagen-portfolio {
+    position: relative;
+}
+
+.imagen-portfolio img {
+    position: absolute;
+    width: 70%;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3%;
+}
+
+.portfolio .contenedor-titulos {
+    bottom: 2rem;
+}
+
+.portfolio .titulo-uno {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio .titulo-dos {
+    font-size: 1rem;
+}
+
+.portfolio .contenedor-subtitulo {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+.links a {
+    border-radius: 5px;
+    padding: 7px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(255, 0, 149);
+    margin-right: 5px;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+/* Flechas de Slide */
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 98%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 70%;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent aliceblue transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 20px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent aliceblue;
+}
+
+.fp-watermark a {
+    color: transparent !important;
+}
+
+/* About */
+
+.about {
+    position: relative;
+}
+
+.about .imagen-portfolio {
+    position: absolute;
+    width: 90%;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3%;
+}
+
+.about .contenedor-titulos {
+    bottom: 2rem;
+}
+
+.about .titulo-uno {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about .titulo-dos {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* Contacto */
+
+.contacto {
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .titulo {
+    color: aliceblue;
+    margin-bottom: 7rem;
+    font-size: 2rem;
+}
+
+.contacto p {
+    margin-bottom: 2rem;
+    width: 90%;
+    letter-spacing: 0.15rem;
+}
+
+.contacto .linea {
+    width: 80%;
+    height: 2px;
+    background-color: aliceblue;
+    margin: 3rem 0;
+}
+
+.contacto .iconos {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    font-size: 3rem;
+}
+
+.contacto .iconos a {
+    color: aliceblue;
+}
+
+.contacto .footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .footer p {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+    /* header */
+    .contenedor-logo {
+        bottom: 40%;
+        width: 60%;
+    }
+
+    .contenedor-titulos {
+        margin-left: 4rem;
+    }
+
+    .titulo {
+        font-size: 4rem;
+    }
+
+    /* Portfolio */
+
+    .imagen-portfolio img {
+        width: 60%;
+    }
+
+    .portfolio .contenedor-titulos {
+        bottom: 5rem;
+    }
+
+    .portfolio .titulo-uno {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .portfolio .contenedor-subtitulo {
+        font-size: 1rem;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 70%;
+        border-width: 15px 15px 15px 0;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 40px;
+        border-width: 15px 0 15px 15px;
+    }
+
+    .links a {
+        font-size: 1.5rem;
+        padding: 7px 10px;
+        margin-right: 5px;
+    }
+
+    .links {
+        margin-top: 2rem;
+    }
+
+    /* About */
+
+    .about .contenedor-titulos {
+        bottom: 4rem;
+    }
+
+    .about .titulo-uno {
+        font-size: 3rem;
+    }
+
+    .about .titulo-dos {
+        font-size: 1rem;
+    }
+
+    /* Contacto */
+
+    .contacto .titulo {
+        margin-bottom: 7rem;
+        font-size: 3rem;
+    }
+
+    .contacto p {
+        font-size: 1.8rem;
+    }
+
+    .contacto .linea {
+        margin: 7rem 0;
+    }
+
+    .contacto .iconos {
+        font-size: 5rem;
+    }
+
+    .contacto .footer p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    /* Header */
+    .contenedor-logo {
+        width: 40%;
+        left: 70%;
+    }
+
+    .contenedor-titulos {
+        bottom: 4rem;
+    }
+
+    .titulo {
+        font-size: 5rem;
+    }
+
+    .linea-uno,
+    .linea-dos {
+        height: 3px;
+        width: 15rem;
+        margin: 0.5rem 0;
+    }
+
+    .linea-dos {
+        margin-left: 4rem;
+    }
+
+    .contenedor-subtitulo {
+        font-size: 1.5rem;
+    }
+
+    /* Portfolio */
+
+    .imagen-portfolio img {
+        width: 40%;
+        left: 70%;
+    }
+
+    .portfolio .contenedor-titulos {
+        bottom: 5rem;
+    }
+
+    .portfolio .titulo-uno {
+        font-size: 2rem;
+    }
+
+    .portfolio .contenedor-subtitulo {
+        font-size: 1rem;
+    }
+
+    .links a {
+        font-size: 1rem;
+    }
+
+    /* Flechas de Slide */
+
+    .fp-controlArrow.fp-prev {
+        left: 80%;
+    }
+
+    /* About */
+
+    .about .imagen-portfolio {
+        width: 100%;
+    }
+
+    .about .contenedor-titulos {
+        bottom: 5rem;
+    }
+
+    .about .titulo-uno {
+        font-size: 2rem;
+    }
+
+    .about .titulo-dos {
+        font-size: 1rem;
+    }
+
+    /* Contacto */
+
+    .contacto p {
+        font-size: 1.5rem;
+    }
+
+    .contacto .linea {
+        margin: 4.5rem 0;
+    }
+
+    .contacto .iconos {
+        font-size: 4rem;
+    }
+
+    .contacto .footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    /* Header */
+    .contenedor-logo {
+        top: 10%;
+        width: 30%;
+    }
+
+    .contenedor-titulos {
+        bottom: 4rem;
+        margin-left: 12rem;
+    }
+
+    .titulo {
+        font-size: 4rem;
+        letter-spacing: 8px;
+    }
+
+    /* Portfolio */
+
+    .imagen-portfolio img {
+        width: 30%;
+        left: 75%;
+    }
+
+    .portfolio .titulo-uno {
+        font-size: 2rem;
+    }
+
+    .fp-controlArrow.fp-next,
+    .fp-controlArrow.fp-prev {
+        top: 98%;
+    }
+
+    /* About */
+
+    .about .imagen-portfolio {
+        width: 100%;
+        left: 45%;
+    }
+
+    .about .titulo-uno {
+        font-size: 3.5rem;
+    }
+
+    .about .titulo-dos {
+        font-size: 1rem;
+    }
+
+    /* Contacto */
+
+    .contacto .linea {
+        width: 40%;
+        margin: 4rem 0;
+    }
+
+    .contacto .iconos {
+        width: 40%;
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    /* Header */
+
+    .titulo {
+        margin-bottom: 2rem;
+        font-size: 8rem;
+    }
+
+    /* Portfolio */
+
+    .imagen-portfolio img {
+        width: 30%;
+        left: 75%;
+    }
+
+    .portfolio .titulo-uno {
+        font-size: 3.5rem;
+    }
+
+    .links a {
+        font-size: 1.5rem;
+    }
+
+    /* About */
+
+    .about .imagen-portfolio {
+        left: 45%;
+    }
+
+    .about .titulo-uno {
+        font-size: 5rem;
+    }
+
+    .about .titulo-dos {
+        font-size: 1rem;
+    }
+
+    /* Contacto */
+
+    .contacto .linea {
+        width: 40%;
+        margin: 4rem 0;
+    }
+
+    .contacto .iconos {
+        width: 40%;
+        font-size: 3rem;
+    }
+}
